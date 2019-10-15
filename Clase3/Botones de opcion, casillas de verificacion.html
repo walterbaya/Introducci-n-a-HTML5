@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+  <form method="post" action="formulario.php" enctype="multipart/form-data"> 
+
+  	<!--Los botones de opcion excluyentes se generan siempre con labels e inputs de tipo radio, los inputs son los que nos generan todos los circulitos el label es para ponerle el rotulo -->
+
+    <label> Estado Civil? <br>
+    	<lable> Soltero  <input type="radio" name="estado" value="soltero"></lable> 
+        <label> <input type="radio" name="estado" value="casado" checked>Casado</label> <!--Con el checked pongo una opcion predeterminada que me aparece chequeada-->
+        <label> <input type="radio" name="estado" value="Divorciado">Divorciado</label>
+
+        <!--uso de Check box es masomenos lo mismo pero la diferencia es que los check box no son excluyentes-->
+
+        <lable> Intereses tecnologicos 
+        	<label> HTML5 <input type="checkbox" name="Intereses" value="HTML5"> </label>
+        	<label> Angular <input type="checkbox" name="Intereses" value="HTML5"> </label>
+
+        	</lable> 
+
+
+    </label>
+
+
+
+
+</form>	
+
+	
+</body>
+</html>

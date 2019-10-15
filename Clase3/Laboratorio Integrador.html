@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>LaboratiorIntegradorClase3</title>
+ 
+</head>
+
+<body>
+	<form method="post" action="formulario.php" enctype="multipart/form-data"> <!--El formulario debe tener un method,un action y un enctype-->
+	<label><h2> Contacto </h2></label> 
+
+	<label>Nombre</label>
+	<br><br>
+	<input type="text" name="Ingreso de nombre" value="" placeholder="Juan Pedro" style="height:42px;width: 280px;" required />
+	<br>     <!--Siempre en los input va el type el name que es al grupo al que pertenece por ejemplo el input casado de tipo radio lleva name estado civil ya que es un tipo de estado civil y el value, el value es como el nombre que tomo el input es generico y varia segun el navegador en los casos de generadores de texto no va nada, se puede usar un placeholder como recordatorio, recordar que finaliza con / siempre el input-->
+    
+    <label> Edad </label>
+    <br><br>
+    <input type="number" name="Edad" style="height:42px;width: 280px;" required min="18" max="90" >
+    <br>
+    <label> Email </label>
+    <br><br>
+    <input type="email" required placeholder="info@miweb.com" style="height:42px;width: 280px;" />
+    <br>
+    <label >Origen</label>
+    <br><br> <!--El select se utiliza para generar un menu de scroll seguido del option el cual contiene un value que debe ser el nombre por claridad y al lado lo que se quiere mostrar como opcion, fuera de l>-->
+    	<select style="height:48px;width:284px;"> <!--Hay que prestar atencion a mirar la pagina con f12 porque algunos tienen padding y sino no queda igual-->
+
+   			<option value="sectorA"> Sector A </option>
+   			<option value="sectorB"> Sector B </option>
+   			<option value="sectorC"> Sector C </option>
+
+    	 </select>
+
+
+    <br>
+    <label> Comentarios </label>
+    <br><br>
+    <input type="text" name="Comentarios" style="width: 280px;height: 84px " minlength="100"  required> 
+    <br>
+    <label>Estado Civil </label>
+    <br>
+
+    Casado<input type="radio" name="estado civil" value="casado" required /> <!--El tipo radio es el que me permite elegir una u otra cosa excluyentemente-->
+    Soltero<input type="radio" name="estado civil" value="soltero" required />
+    <br><br>
+    <label>Acepto terminos y condiciones </label>
+    <input type="checkbox" name="Condicion Termino y condiciones" value="" required  checked="checked" />
+    <br>
+    <input type="submit" name="enviar" value="Enviar" style="color: white;height:42px;width: 280px;background-color: #33AB68;border:none;"> 
+
+	 </form>
+	
+</body>
+</html>

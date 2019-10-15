@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Introduccion a formularios</title>
+</head>
+<body >
+	<h1>Contacto</h1>
+	<form action="el.php" method="post" enctype="">
+		
+		<label> Nombre <br><br>
+			<input type="text" name="nombre" value="" placeholder="Juan Pedro" required>
+	 	</label><br>
+
+		<label for = "email">Email</label><br><br>
+			<input type="email" name="email" value="" placeholder="info@miweb.com" required>
+		<br>
+		<label>Origen</label><br><br>
+	    <label>
+	    	<select>
+	    		<option value="a">Sector A</option>		
+				<option value="b">Sector B</option>
+
+	    	</select>
+		</label>	<!--Menu desplegable-->	
+		<br>
+
+		<label>Comentarios</label>
+		<br><br>
+		<textarea style="width: 180px;height: 180px;"
+		name="consulta"> </textarea>
+		<br><br>
+
+		<label>Edad</label><input type="number" name="numero" min="18" max="80">
+
+
+
+		<label>Estado Civil:</label><br>
+
+		<label>Casado</label><input type="radio" name="estadoCivil">
+		<label>Soltero</label><input type="radio" name="estadoCivil">
+
+		<br><br>
+
+		<label>Acepta Terminos y condiciones</label><input type="checkbox" name="terminos" checked required>
+
+		<br><br>
+		<input type="submit" name="enviar" style="background-color: green; width: 20%;height: 40px; border: dashed; border-color: green;color: white;">
+		
+
+	</form>
+
+</body>
+</html>
