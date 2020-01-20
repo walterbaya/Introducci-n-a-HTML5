@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Estructuras de datos en Algoritmos y estructuras de datos II</title>
+</head>
+<body>
+	<h1 style="background-color: grey;text-align: center;">Sobre mi</h1>
+
+	<ul style="list-style-type: none;">
+		<li style="background-color: blue;width: 10%;"><a href="index.html" style="color: white;">Inicio</a></li><br>
+		<li style="background-color: blue;width: 10%;"><a href="estructurasdedatos.html" style="color: white;">Estructuras de datos</a></li><br>
+		<li style="background-color: blue;width: 10%;"><a href="sobremi.html" style="color: white;">Sobre mi</a></li><br>
+	</ul>
+	<h2 style="background-color: grey">Informacion del creador</h2>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod perspiciatis eum consequatur sapiente tenetur voluptates obcaecati distinctio dignissimos dicta dolorum molestiae illo numquam nam, esse minus commodi repellat, qui fugiat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem fugiat commodi totam sint illo incidunt quis eius, eum, iure, voluptatibus fugit, voluptas atque ratione nobis sed omnis! Aliquam sequi, nisi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus doloribus, molestiae fugit repellat repudiandae dolor non facere ex incidunt, nulla quidem illo suscipit nihil accusamus rem, nemo dolorum rerum ipsam.</p>
+
+	<form method="post" action="codigo.php" enctype="multipart/form-data"> <!--aca especifico la ruta del php y el tipo enctype multipart significa que puedo adjuntar archivos-->
+	<label><strong>Nombre</strong> <br>
+		<input type="text" name="in-nombre" style="width: 30%" required></label> <br>
+	<label><strong>Email</strong><br><input type="email" name="in-email" style="width: 30%" multiple placeholder="mail@dominio.com; mail2@dominio.com" required></label> <br>
+	<label><strong>Mensaje</strong><br><textarea name="ta-mensaje"  style="width: 30%;height: 10em;" required></textarea></label><br>
+	<input type="submit" value="Enviar" style="background-color: pink;border-style: dashed;width: 8em;height: 4em;border-color: black;">
+
+		
+	</form>
+</body>
+</html>
